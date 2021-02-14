@@ -1,0 +1,103 @@
+.navbar-dark {
+  background-color: #000000;
+  font-family: "Brush Script MT", Cursive;
+}
+
+.navbar-dark:hover ::after {
+  content: " of Farzin";
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.index {
+  background-image: linear-gradient(to bottom, black, gold);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.index .welcome {
+  color: #FFD700;
+  font-family: "Brush Script MT", Cursive;
+  font-weight: bold;
+  text-shadow: 0px 5px #000000;
+}
+.index .bio {
+  color: #ffffff;
+  font-size: 1rem;
+  font-size: Fantasy;
+  text-shadow: 1px 2px #000000;
+}
+.index .bio:hover {
+  opacity: 1;
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.index ul {
+  list-style: none;
+  display: flex;
+}
+.index li {
+  padding: 5px;
+}
+.index .a-custom {
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.index .a-custom:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 3px gold;
+  border-radius: 0px 5px 0px 5px;
+}
+.index .a-custom.active {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 3px gold;
+  border-radius: 0px 5px 0px 5px;
+}
+.index .i-custom {
+  color: #FFD700;
+}
+.index .hearth {
+  color: #C21807;
+}
+.index .p-custome {
+  color: #ffffff;
+}
+.index ol {
+  color: #ffffff;
+  list-style: none;
+}
+
+footer {
+  background-color: #000000 !important;
+  border: 1px solid #000000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+footer i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+footer i:hover {
+  color: #FFD700;
+  cursor: pointer;
+}
+footer p {
+  color: #ffffff;
+  font-size: 0.86rem;
+}
+
+/*# sourceMappingURL=style.css.map */

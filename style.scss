@@ -1,0 +1,103 @@
+// theme color
+$primary-color: #000000;
+$secondary-color: #FFD700;
+$background-primary: linear-gradient(to bottom ,rgba(0, 0, 0, 1), rgba(255,215,0,1));
+$primary-font: "Brush Script MT",Cursive;
+$secondary-font: Fantasy;
+
+.navbar-dark{
+    background-color:$primary-color;
+    font-family: $primary-font;
+}
+.navbar-dark:hover ::after{
+    content: " of Farzin";
+}
+html{
+    position:relative; 
+    min-height: 100%;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.index{
+    background-image: $background-primary;
+    background-repeat: no-repeat;
+    margin: 0;
+    .welcome {
+        color:$secondary-color;
+        font-family: $primary-font;
+        font-weight: bold;
+        text-shadow: 0px 5px $primary-color;
+    }
+    .bio {
+        color: #ffffff;
+        font-size: 1rem;
+        font-size: $secondary-font;
+        text-shadow: 1px 2px $primary-color;
+    }
+    .bio:hover{
+        opacity: 1;
+        transform: scale(1.5);
+        transition: all 0.3s ease-in-out 0.2s;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    li{
+        padding: 5px;
+    }
+    .a-custom{
+        color: $primary-color;   
+        padding: 5px;
+        text-decoration: none;
+    }
+    .a-custom:hover {
+        background-color: $primary-color;
+        color:#ffffff;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 3px rgba(255,215,0,1);
+        border-radius: 0px 5px 0px 5px;
+    }
+    .a-custom.active {
+        background-color: $primary-color;
+        color:#ffffff;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 3px rgba(255,215,0,1);
+        border-radius: 0px 5px 0px 5px;
+    }
+    .i-custom {
+        color: $secondary-color;
+    }
+    .hearth{
+        color: #C21807;
+    }
+    .p-custome {
+        color:#ffffff;
+    }
+    ol{
+        color:#ffffff;
+        list-style: none;
+    }
+}
+footer{
+    background-color:$primary-color !important;
+    border: 1px solid $primary-color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    i{
+        font-size: 2rem;
+        color:#ffffff
+    }
+    i:hover{
+        color: $secondary-color;
+        cursor: pointer;
+    }
+    p{
+        color: #ffffff;
+        font-size: 0.86rem;
+    }
+}
