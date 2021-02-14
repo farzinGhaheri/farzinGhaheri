@@ -15,6 +15,7 @@ $secondary-font: Fantasy;
 html{
     position:relative; 
     min-height: 100%;
+    min-width: 100%;
 }
 html, body{
     margin: 0;
@@ -44,6 +45,8 @@ html, body{
     ul{
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     li{
         padding: 5px;
