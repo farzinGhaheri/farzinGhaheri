@@ -1,6 +1,8 @@
 // theme color
 $primary-color: #000000;
 $secondary-color: #FFD700;
+$custom-red: #C21807;
+$custom-white: #ffffff;
 $background-primary: linear-gradient(to bottom ,rgba(0, 0, 0, 1), rgba(255,215,0,1));
 $primary-font: "Brush Script MT",Cursive;
 $secondary-font: Fantasy;
@@ -74,13 +76,13 @@ html, body{
         color: $secondary-color;
     }
     .hearth{
-        color: #C21807;
+        color: $custom-red;
     }
     .p-custome {
-        color:#ffffff;
+        color:$custom-white;
     }
     ol{
-        color:#ffffff;
+        color:$custom-white;
         list-style: none;
     }
 }
@@ -93,14 +95,14 @@ footer{
     height: auto;
     i{
         font-size: 2rem;
-        color:#ffffff
+        color:$custom-white;
     }
     i:hover{
         color: $secondary-color;
         cursor: pointer;
     }
     p{
-        color: #ffffff;
+        color: $custom-white;
         font-size: 0.86rem;
     }
 }
