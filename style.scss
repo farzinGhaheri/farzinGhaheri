@@ -8,6 +8,9 @@ $gold-color: #ffcf40;
 $background-primary: linear-gradient(to bottom ,rgba(0, 0, 0, 1), rgba(255,215,0,1));
 $primary-font: "Brush Script MT",Cursive;
 $secondary-font: Fantasy;
+$navbar-color-blue:#2196F3;
+$navbar-color-red: #f44336;
+$navbar-color-gray: #555;
 
 .navbar-dark{
     background-color:$primary-color;
@@ -49,7 +52,7 @@ $secondary-font: Fantasy;
         width: 129px;
         text-decoration: none;
         font-size: 20px;
-        color: white;
+        color: $custom-white;
         border-radius: 40px 0 0 40px;
       }
       
@@ -66,17 +69,17 @@ $secondary-font: Fantasy;
       
       #ed {
         top: 150px;
-        background-color: #2196F3;
+        background-color: $navbar-color-blue;
       }
       
       #sk {
         top: 290px;
-        background-color: #f44336;
+        background-color: $navbar-color-red;
       }
       
       #pr {
         top: 220px;
-        background-color: #555
+        background-color: $navbar-color-gray
       }
       ul{
         list-style: none;
@@ -87,6 +90,16 @@ $secondary-font: Fantasy;
       li{
         padding-right: 5px;
         padding-bottom: 0;
+      }
+      .ul-custom{
+        list-style: none;
+        display: flex;
+        padding: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .ul-custom li{
+        margin: 0.86rem;
       }
     .a-custom{
         color: $gold-color;   
@@ -106,12 +119,6 @@ $secondary-font: Fantasy;
         cursor: pointer;
         box-shadow: 0px 0px 0px 3px rgba(255,215,0,1);
         border-radius: 0px 5px 0px 5px;
-    }
-    .i-custom {
-        color: $secondary-color;
-    }
-    .hearth{
-        color: $third-color;
     }
     .p-custome {
         color:$custom-white;
