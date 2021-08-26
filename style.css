@@ -8,10 +8,10 @@
 
 .index {
   background-color: #420516;
-  padding: 2rem;
+  padding: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .index .card {
@@ -29,13 +29,9 @@
   -webkit-box-shadow: 0 0 10px #7D1935;
           box-shadow: 0 0 10px #7D1935;
   border: 1px solid #420516;
-}
-
-.index .welcome {
-  color: #7D1935;
-  font-family: "Brush Script MT", Cursive;
-  font-weight: bold;
-  text-shadow: 0px 5px #420516;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/p.jpg");
 }
 
 .index .bio {
@@ -57,13 +53,18 @@
 }
 
 .index #mySidenav a:hover {
-  left: 0;
+  -webkit-box-shadow: 0 0 19px #ffffff;
+          box-shadow: 0 0 19px #ffffff;
+}
+
+.index #mySidenav a.active {
+  -webkit-box-shadow: 0 0 19px #ffffff;
+          box-shadow: 0 0 19px #ffffff;
 }
 
 .index #ex {
   top: 80px;
   background-color: #ffcf40;
-  border-radius: 20px;
 }
 
 .index #ed {
@@ -72,12 +73,12 @@
 }
 
 .index #sk {
-  top: 220px;
+  top: 290px;
   background-color: #f44336;
 }
 
 .index #pr {
-  top: 290px;
+  top: 220px;
   background-color: #555;
 }
 

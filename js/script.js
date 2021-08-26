@@ -1,7 +1,7 @@
 function getDate() {
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-document.getElementById("selectDate").innerHTML = date
+document.getElementById("selectDate").innerHTML = date;
 }
 
 function changeTabs(evt, item) {
@@ -16,9 +16,4 @@ function changeTabs(evt, item) {
     }
     document.getElementById(item).style.display = "block";
     evt.currentTarget.className += " active";
-}
-function checkTabs(){
-    var tabContent;
-    tabContent = document.getElementById('exprience')
-    tabContent.style.display = "none"
 }

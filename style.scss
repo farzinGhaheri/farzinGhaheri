@@ -2,7 +2,7 @@
 $primary-color: #420516;
 $secondary-color: #7D1935;
 $third-color: #B42B51;
-$fouth-color:#E63E6D;
+$forth-color:#E63E6D;
 $custom-white: #ffffff;
 $gold-color: #ffcf40;
 $background-primary: linear-gradient(to bottom ,rgba(0, 0, 0, 1), rgba(255,215,0,1));
@@ -13,14 +13,14 @@ $secondary-font: Fantasy;
     background-color:$primary-color;
     font-family: $primary-font;
     border-radius: 15px;
-    box-shadow: 0 0 7px $fouth-color;
+    box-shadow: 0 0 7px $forth-color;
 }
 .index{
     background-color: $primary-color;
-    padding:2rem;
+    padding:1.5rem;
     padding-bottom: 0;
     margin-bottom: 0;
-    margin:2rem;
+    margin:1.5rem;
     .card{
         background-color: $custom-white;
         border-radius: 15px;
@@ -32,19 +32,15 @@ $secondary-font: Fantasy;
         height: 150px;
         border-radius: 50%;
         box-shadow: 0 0 10px $secondary-color;
-        border:1px solid $primary-color
-    }
-    .welcome {
-        color:$secondary-color;
-        font-family: $primary-font;
-        font-weight: bold;
-        text-shadow: 0px 5px $primary-color;
+        border:1px solid $primary-color;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./assets/p.jpg');
     }
     .bio {
-        color: $fouth-color;
+        color: $forth-color;
         font-size: 1.3rem;
         font-weight: 400;
-        // text-shadow: 1px 2px $primary-color;
     }
     #mySidenav a {
         position:absolute;
@@ -58,12 +54,14 @@ $secondary-font: Fantasy;
       }
       
       #mySidenav a:hover {
-        left: 0;
+        box-shadow: 0 0 19px $custom-white;
+      }
+      #mySidenav a.active {
+        box-shadow: 0 0 19px $custom-white;
       }
       #ex {
         top: 80px;
         background-color: $gold-color;
-        border-radius: 20px;
       }
       
       #ed {
@@ -72,12 +70,12 @@ $secondary-font: Fantasy;
       }
       
       #sk {
-        top: 220px;
+        top: 290px;
         background-color: #f44336;
       }
       
       #pr {
-        top: 290px;
+        top: 220px;
         background-color: #555
       }
       ul{
