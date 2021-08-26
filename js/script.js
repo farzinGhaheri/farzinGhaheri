@@ -1,9 +1,9 @@
+document.getElementById('getBody').onload= function() {getDate()};
 function getDate() {
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 document.getElementById("selectDate").innerHTML = date;
 }
-
 function changeTabs(evt, item) {
     var i, tabContent, tabLinks;
     tabContent = document.getElementsByClassName("tabContent")
