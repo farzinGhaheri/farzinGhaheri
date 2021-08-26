@@ -16,5 +16,9 @@ function changeTabs(evt, item) {
     }
     document.getElementById(item).style.display = "block";
     evt.currentTarget.className += " active";
-
+}
+function checkTabs(){
+    var tabContent;
+    tabContent = document.getElementById('exprience')
+    tabContent.style.display = "none"
 }

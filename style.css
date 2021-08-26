@@ -1,106 +1,161 @@
 .navbar-dark {
-  background-color: #000000;
+  background-color: #420516;
   font-family: "Brush Script MT", Cursive;
-}
-
-.navbar-dark:hover ::after {
-  content: " of Farzin";
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-  min-width: 100%;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 7px #E63E6D;
+          box-shadow: 0 0 7px #E63E6D;
 }
 
 .index {
-  background-image: linear-gradient(to bottom, black, gold);
-  background-repeat: no-repeat;
-  margin: 0;
+  background-color: #420516;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin: 2rem;
 }
+
+.index .card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 17px #ffcf40;
+          box-shadow: 0px 0px 17px #ffcf40;
+  position: relative;
+}
+
+.index .profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #7D1935;
+          box-shadow: 0 0 10px #7D1935;
+  border: 1px solid #420516;
+}
+
 .index .welcome {
-  color: #FFD700;
+  color: #7D1935;
   font-family: "Brush Script MT", Cursive;
   font-weight: bold;
-  text-shadow: 0px 5px #000000;
+  text-shadow: 0px 5px #420516;
 }
+
 .index .bio {
-  color: #ffffff;
-  font-size: 1rem;
-  font-size: Fantasy;
-  text-shadow: 1px 2px #000000;
+  color: #E63E6D;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
-.index .bio:hover {
-  opacity: 1;
-  transform: scale(1.5);
-  transition: all 0.3s ease-in-out 0.2s;
+
+.index #mySidenav a {
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px;
+  width: 129px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 40px 0 0 40px;
 }
+
+.index #mySidenav a:hover {
+  left: 0;
+}
+
+.index #ex {
+  top: 80px;
+  background-color: #ffcf40;
+  border-radius: 20px;
+}
+
+.index #ed {
+  top: 150px;
+  background-color: #2196F3;
+}
+
+.index #sk {
+  top: 220px;
+  background-color: #f44336;
+}
+
+.index #pr {
+  top: 290px;
+  background-color: #555;
+}
+
 .index ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .index li {
-  padding: 5px;
+  padding-right: 5px;
+  padding-bottom: 0;
 }
+
 .index .a-custom {
-  color: #000000;
+  color: #ffcf40;
   padding: 5px;
   text-decoration: none;
 }
+
 .index .a-custom:hover {
-  background-color: #000000;
+  background-color: #420516;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0px 0px 0px 3px gold;
+  -webkit-box-shadow: 0px 0px 0px 3px gold;
+          box-shadow: 0px 0px 0px 3px gold;
   border-radius: 0px 5px 0px 5px;
 }
+
 .index .a-custom.active {
-  background-color: #000000;
+  background-color: #420516;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0px 0px 0px 3px gold;
+  -webkit-box-shadow: 0px 0px 0px 3px gold;
+          box-shadow: 0px 0px 0px 3px gold;
   border-radius: 0px 5px 0px 5px;
 }
+
 .index .i-custom {
-  color: #FFD700;
+  color: #7D1935;
 }
+
 .index .hearth {
-  color: #C21807;
+  color: #B42B51;
 }
+
 .index .p-custome {
   color: #ffffff;
 }
+
 .index ol {
   color: #ffffff;
   list-style: none;
 }
 
 footer {
-  background-color: #000000 !important;
-  border: 1px solid #000000;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
+  background-color: #420516 !important;
 }
+
 footer i {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  padding-right: 2px;
   color: #ffffff;
 }
+
 footer i:hover {
-  color: #FFD700;
+  color: #ffcf40;
   cursor: pointer;
 }
+
 footer p {
   color: #ffffff;
   font-size: 0.86rem;
 }
-
 /*# sourceMappingURL=style.css.map */

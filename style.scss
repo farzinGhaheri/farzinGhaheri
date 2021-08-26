@@ -1,8 +1,10 @@
 // theme color
-$primary-color: #000000;
-$secondary-color: #FFD700;
-$custom-red: #C21807;
+$primary-color: #420516;
+$secondary-color: #7D1935;
+$third-color: #B42B51;
+$fouth-color:#E63E6D;
 $custom-white: #ffffff;
+$gold-color: #ffcf40;
 $background-primary: linear-gradient(to bottom ,rgba(0, 0, 0, 1), rgba(255,215,0,1));
 $primary-font: "Brush Script MT",Cursive;
 $secondary-font: Fantasy;
@@ -10,23 +12,28 @@ $secondary-font: Fantasy;
 .navbar-dark{
     background-color:$primary-color;
     font-family: $primary-font;
-}
-.navbar-dark:hover ::after{
-    content: " of Farzin";
-}
-html{
-    position:relative; 
-    min-height: 100%;
-    min-width: 100%;
-}
-html, body{
-    margin: 0;
-    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 7px $fouth-color;
 }
 .index{
-    background-image: $background-primary;
-    background-repeat: no-repeat;
-    margin: 0;
+    background-color: $primary-color;
+    padding:2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin:2rem;
+    .card{
+        background-color: $custom-white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 17px $gold-color;
+        position: relative;
+    }
+    .profile{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px $secondary-color;
+        border:1px solid $primary-color
+    }
     .welcome {
         color:$secondary-color;
         font-family: $primary-font;
@@ -34,27 +41,57 @@ html, body{
         text-shadow: 0px 5px $primary-color;
     }
     .bio {
-        color: #ffffff;
-        font-size: 1rem;
-        font-size: $secondary-font;
-        text-shadow: 1px 2px $primary-color;
+        color: $fouth-color;
+        font-size: 1.3rem;
+        font-weight: 400;
+        // text-shadow: 1px 2px $primary-color;
     }
-    .bio:hover{
-        opacity: 1;
-        transform: scale(1.5);
-        transition: all 0.3s ease-in-out 0.2s;
-    }
-    ul{
+    #mySidenav a {
+        position:absolute;
+        transition: 0.3s;
+        padding: 15px;
+        width: 129px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 40px 0 0 40px;
+      }
+      
+      #mySidenav a:hover {
+        left: 0;
+      }
+      #ex {
+        top: 80px;
+        background-color: $gold-color;
+        border-radius: 20px;
+      }
+      
+      #ed {
+        top: 150px;
+        background-color: #2196F3;
+      }
+      
+      #sk {
+        top: 220px;
+        background-color: #f44336;
+      }
+      
+      #pr {
+        top: 290px;
+        background-color: #555
+      }
+      ul{
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    li{
-        padding: 5px;
-    }
+       } 
+      li{
+        padding-right: 5px;
+        padding-bottom: 0;
+      }
     .a-custom{
-        color: $primary-color;   
+        color: $gold-color;   
         padding: 5px;
         text-decoration: none;
     }
@@ -76,7 +113,7 @@ html, body{
         color: $secondary-color;
     }
     .hearth{
-        color: $custom-red;
+        color: $third-color;
     }
     .p-custome {
         color:$custom-white;
@@ -88,17 +125,13 @@ html, body{
 }
 footer{
     background-color:$primary-color !important;
-    border: 1px solid $primary-color;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
     i{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        padding-right:2px;
         color:$custom-white;
     }
     i:hover{
-        color: $secondary-color;
+        color: $gold-color;
         cursor: pointer;
     }
     p{
