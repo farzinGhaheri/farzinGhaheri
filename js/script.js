@@ -5,7 +5,7 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 document.getElementById("selectDate").innerHTML = date;
 }
 function changeTabs(evt, item) {
-    var i, tabContent, tabLinks;
+    var i, tabContent, tabLinks, checkBio;
     tabContent = document.getElementsByClassName("tabContent")
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
@@ -16,4 +16,7 @@ function changeTabs(evt, item) {
     }
     document.getElementById(item).style.display = "block";
     evt.currentTarget.className += " active";
+    if(evt.currentTarget.className === 'navbar-brand tabLinks active'){
+    document.getElementById('bioText').style.display="inline-flex";
+    }
 }
