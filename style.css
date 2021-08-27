@@ -1,3 +1,12 @@
+:export {
+  primaryColor: #420516;
+  secondaryColor: #7D1935;
+  thirdColor: #B42B51;
+  forthColor: #E63E6D;
+  goldColor: #ffcf40;
+  customWhite: #ffffff;
+}
+
 .navbar-dark {
   background-color: #420516;
   font-family: "Brush Script MT", Cursive;
@@ -167,5 +176,62 @@ footer i:hover {
 footer p {
   color: #ffffff;
   font-size: 0.86rem;
+}
+
+.dark-color {
+  background-color: #261C2C !important;
+}
+
+.dark-color .navbar-dark {
+  background-color: #261C2C !important;
+  -webkit-box-shadow: 0 0 7px #6E85B2 !important;
+          box-shadow: 0 0 7px #6E85B2 !important;
+}
+
+.dark-color footer {
+  background-color: #261C2C !important;
+}
+
+.dark-color footer i:hover {
+  color: #6E85B2 !important;
+}
+
+.dark-color .profile {
+  -webkit-box-shadow: 0 0 10px #3E2C41 !important;
+          box-shadow: 0 0 10px #3E2C41 !important;
+  border: 1px solid #261C2C !important;
+}
+
+.dark-color .bio {
+  color: #6E85B2 !important;
+}
+
+.dark-color #ex {
+  background-color: #1D2D50 !important;
+}
+
+.dark-color #ed {
+  background-color: #133B5C !important;
+}
+
+.dark-color #pr {
+  background-color: #1E5F74 !important;
+}
+
+.dark-color #sk {
+  background-color: #5C527F !important;
+}
+
+.dark-color .a-custom:hover {
+  background-color: #261C2C !important;
+}
+
+.dark-color .a-custom.active {
+  background-color: #261C2C !important;
+}
+
+.dark-color table, .dark-color td, .dark-color th {
+  background-color: #3E2C41 !important;
+  color: #ffffff !important;
 }
 /*# sourceMappingURL=style.css.map */
