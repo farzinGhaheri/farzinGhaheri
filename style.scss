@@ -36,7 +36,6 @@
     }
     #mySidenav a {
         position:absolute;
-        transition: 0.3s;
         padding: 15px;
         width: 129px;
         text-decoration: none;
@@ -116,7 +115,10 @@
         color:$custom-white;
         list-style: none;
     }
-
+    td a{
+      text-decoration: none;
+      color:$forth-color;
+    }
 }
 footer{
     background-color:$primary-color !important;
@@ -174,5 +176,9 @@ footer{
   table, td, th{
     background-color: $secondary-dark-color !important;
     color:$custom-white !important;
+  }
+  td a{
+    text-decoration: none !important;
+    color:$gold-color !important;
   }
 }
