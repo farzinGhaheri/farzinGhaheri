@@ -142,11 +142,6 @@
   text-align: justify;
 }
 
-.index ol {
-  color: #ffffff;
-  list-style: none;
-}
-
 .index td a {
   text-decoration: none;
   color: #E63E6D;
@@ -180,6 +175,11 @@ footer p {
   background-color: #261C2C !important;
   -webkit-box-shadow: 0 0 7px #6E85B2 !important;
           box-shadow: 0 0 7px #6E85B2 !important;
+}
+
+.dark-color .card {
+  -webkit-box-shadow: 0px 0px 17px #6E85B2;
+          box-shadow: 0px 0px 17px #6E85B2;
 }
 
 .dark-color footer {

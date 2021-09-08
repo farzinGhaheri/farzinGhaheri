@@ -111,10 +111,6 @@
     .custom-div{
       text-align: justify;
     }
-    ol{
-        color:$custom-white;
-        list-style: none;
-    }
     td a{
       text-decoration: none;
       color:$forth-color;
@@ -141,6 +137,9 @@ footer{
   .navbar-dark{
     background-color: $primary-dark-color !important;
     box-shadow: 0 0 7px $forth-dark-color !important;
+  }
+  .card{
+    box-shadow: 0px 0px 17px $forth-dark-color;
   }
   footer{
     background-color: $primary-dark-color !important;
