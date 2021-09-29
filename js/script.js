@@ -1,4 +1,4 @@
-document.getElementById('getBody').onload= function() {getDate()};
+document.getElementById('getBody').onload= function() {speak('Welcome to this page, my name is Farzin Ghaheri'), getDate()};
 function getDate() {
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -34,3 +34,8 @@ function changeColor(data){
     changeValue.setAttribute('value', 'on');
    }
 }
+const speak = (msg) =>{
+    const sp = new SpeechSynthesisUtterance(msg);
+        [sp.voice] = speechSynthesis.getVoices();
+        speechSynthesis.speak(sp)
+};
