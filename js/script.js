@@ -1,4 +1,4 @@
-document.getElementById('getBody').onload= function() {speak('Welcome to this page, my name is Farzin Ghaheri'), getDate()};
+document.getElementById('getBody').onload= function() {speak('Welcome to this page'), getDate()};
 function getDate() {
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
